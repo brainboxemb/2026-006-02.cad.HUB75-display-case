@@ -6,6 +6,7 @@ on:
   push:
     paths:
       - "cad/v1.0/**"
+      - "cad/v1.1/**"
       - ".github/workflows/render-openscad.yml"
 
 permissions:
@@ -17,6 +18,7 @@ jobs:
     with:
       projects: |
         cad/v1.0|out/v1.0/png|hub75-display-case
+        cad/v1.1|out/v1.1/png|hub75-display-case
 
       image_size: "2560,1440"
       changed_only: true

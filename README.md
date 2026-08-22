@@ -7,7 +7,7 @@ This repository contains the OpenSCAD development of a wooden case for a HUB75 L
 The design uses a modular OpenSCAD structure with separate components and assemblies. Individual parts can be opened, rendered and tuned independently, while the complete construction can be viewed from `main.scad`.
 
 > **Project status:** Concept development  
-> V1.0 captures the original wooden display-case concept with an internal aluminium HUB75 frame and is mainly retained as a reference design. V1.1 explores a substantially slimmer upper display section combined with an external Ø22 mm roundwood carry structure. Active concept development has moved to V1.1; the printed rod interfaces are still conceptual and need further mechanical refinement before fabrication.
+> V1.0 captures the original wooden display-case concept with an internal aluminium HUB75 frame and is mainly retained as a reference design. V1.1 explores a substantially slimmer upper display section combined with an external Ø22 mm roundwood carry structure. Active concept development has moved to V1.1; the printed roundwood interfaces are still conceptual and need further mechanical refinement before fabrication.
 
 ## V1.0
 
@@ -92,21 +92,25 @@ Open `cad/v1.0/main.scad` to view and configure the original concept.
 
 ### Concept
 
-V1.1 takes a different approach to the complete display case rather than only changing individual brackets.
+V1.1 continues the complete V1.0 display-case design, but changes the upper construction and carry structure.
 
-The lower storage section remains approximately **110 mm deep**, while the upper display section is reduced to approximately **60 mm deep**. The side walls use 18 mm plywood and transition between the deeper end zones and the slimmer central display section with an R20 routed-style profile.
+The lower storage section remains approximately **110 mm deep**, while the upper display section is reduced to approximately **60 mm deep** through the central section. The side walls use 18 mm plywood and retain deeper end zones with 30 mm straight sections and R20 concave transitions toward the slimmer middle section.
 
-A visible **Ø22 mm beech roundwood structure** runs around the upper display section:
+The removable top panel follows the same shape language, with deeper end zones and concave R20 transitions toward the 60 mm central section.
+
+The V1.0 front panel, lower storage layout, HUB75 frame, clamps, rear panel, inserts, corner brackets, feet and other applicable configuration options are retained in V1.1.
+
+The V1.0 top-handle construction has been removed from V1.1 and replaced by a visible **Ø22 mm roundwood carry structure** consisting of:
 
 - one vertical roundwood rail at each side;
 - one horizontal roundwood rail across the top;
 - separate blind printed sockets for the vertical and horizontal rails;
 - upper vertical sockets attached to the plywood side walls;
-- mirrored lower sockets attached at the lower end of the upper side walls;
-- horizontal sockets attached to an 18 mm plywood cross member under the removable top;
+- mirrored lower sockets at the lower end of the upper side walls;
+- horizontal sockets attached to an 18 mm plywood cross member below the removable top;
 - two additional center supports between the horizontal rail and the cross member.
 
-The removable top is not intended to carry the lifting load. The carry structure instead transfers its load into the plywood side walls and the upper cross member.
+The removable top is not intended to carry the lifting load. The carry structure transfers its load into the plywood side walls and the upper cross member.
 
 The current V1.1 model deliberately keeps the vertical and horizontal socket modules as separate printed parts. Their exact geometry, fastening and print orientation still need to be refined after the overall construction concept has been validated.
 
@@ -150,22 +154,17 @@ out/v1.1/png/
 
 ### CAD structure
 
-V1.1 has been moved out of the earlier single-file concept sandbox and into the same modular project structure used by V1.0.
+V1.1 continues to use the modular OpenSCAD structure introduced in V1.0.
 
 ```text
 cad/v1.1/
 ├── main.scad
 ├── config/
-│   └── project_config.scad
 ├── components/
-│   ├── _lib/
-│   │   └── geometry.scad
-│   ├── plywood_case.scad
-│   ├── display_reference.scad
-│   ├── roundwood_frame.scad
-│   └── roundwood_brackets.scad
+│   ├── roundwood_carry_frame.scad
+│   └── ...
 ├── assemblies/
-│   └── display_assembly.scad
+│   └── ...
 └── renders/
     ├── front.scad
     ├── front_angled.scad
@@ -175,9 +174,9 @@ cad/v1.1/
     └── exploded_rear.scad
 ```
 
-Open `cad/v1.1/main.scad` to view the complete V1.1 concept.
+Open `cad/v1.1/main.scad` to view and configure the complete V1.1 concept.
 
-The Customizer provides complete, structure-only, body-only and exploded views together with visibility controls for the main construction groups.
+The Customizer keeps the applicable V1.0 visibility options and adds controls for the roundwood frame, brackets, cross member and center supports. A dedicated `roundwood_structure` view is also available for inspecting the new carry structure separately.
 
 ## Automatic renders
 

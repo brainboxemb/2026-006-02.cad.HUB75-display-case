@@ -23,7 +23,7 @@ jobs:
       # Add a version here once cad/<version>/exports contains STL entry points.
       # v1.2 is included as the current example.
       export_projects: |
-        cad/v1.2|out/v1.2/stl|hub75-display-frame
+        cad/v1.1|out/v1.1/stl|hub75-display-case
 
       image_size: "2560,1440"
       changed_only: true

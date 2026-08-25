@@ -5,8 +5,8 @@ on:
 
   push:
     paths:
-      - "cad/v1.0/**"
-      - "cad/v1.1/**"
+      - "v1.0/cad/**"
+      - "v1.1/cad/**"
       - ".github/workflows/build-openscad.yml"
 
 permissions:
@@ -17,13 +17,13 @@ jobs:
     uses: brainboxemb/brainboxemb.github.actions/.github/workflows/openscad-build.yml@main
     with:
       render_projects: |
-        cad/v1.0|out/v1.0/png|hub75-display-case
-        cad/v1.1|out/v1.1/png|hub75-display-case
+        v1.0/cad|v1.0/out/png|hub75-display-case
+        v1.1/cad|v1.1/out/png|hub75-display-case
 
       # Add a version here once cad/<version>/exports contains STL entry points.
       # v1.2 is included as the current example.
       export_projects: |
-        cad/v1.1|out/v1.1/stl|hub75-display-case
+        v1.1/cad|v1.1/out/stl|hub75-display-case
 
       image_size: "2560,1440"
       changed_only: true

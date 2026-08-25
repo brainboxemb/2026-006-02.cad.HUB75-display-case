@@ -34,7 +34,7 @@ V1.0 is still a concept model and is mainly retained as a reference for the orig
 The OpenSCAD model is stored in:
 
 ```text
-cad/v1.0/
+v1.0/cad/
 ```
 
 ### Renders
@@ -42,51 +42,54 @@ cad/v1.0/
 Reference renders generated from the V1.0 OpenSCAD model are stored in:
 
 ```text
-out/v1.0/png/
+v1.0/out/png/
 ```
 
 #### Front view
 
-![HUB75 display case V1.0 - front view](out/v1.0/png/hub75-display-case-front.png)
+![HUB75 display case V1.0 - front view](v1.0/out/png/hub75-display-case-front.png)
 
 #### Front angled view
 
-![HUB75 display case V1.0 - front angled view](out/v1.0/png/hub75-display-case-front-angled.png)
+![HUB75 display case V1.0 - front angled view](v1.0/out/png/hub75-display-case-front-angled.png)
 
 #### Rear view
 
-![HUB75 display case V1.0 - rear view](out/v1.0/png/hub75-display-case-rear.png)
+![HUB75 display case V1.0 - rear view](v1.0/out/png/hub75-display-case-rear.png)
 
 #### Rear angled view
 
-![HUB75 display case V1.0 - rear angled view](out/v1.0/png/hub75-display-case-rear-angled.png)
+![HUB75 display case V1.0 - rear angled view](v1.0/out/png/hub75-display-case-rear-angled.png)
 
 #### Exploded front view
 
-![HUB75 display case V1.0 - exploded front view](out/v1.0/png/hub75-display-case-exploded-front.png)
+![HUB75 display case V1.0 - exploded front view](v1.0/out/png/hub75-display-case-exploded-front.png)
 
 #### Exploded rear view
 
-![HUB75 display case V1.0 - exploded rear view](out/v1.0/png/hub75-display-case-exploded-rear.png)
+![HUB75 display case V1.0 - exploded rear view](v1.0/out/png/hub75-display-case-exploded-rear.png)
 
 ### CAD structure
 
 ```text
-cad/v1.0/
-├── main.scad
-├── config/
-├── components/
-├── assemblies/
-└── renders/
-    ├── front.scad
-    ├── front_angled.scad
-    ├── rear.scad
-    ├── rear_angled.scad
-    ├── exploded_front.scad
-    └── exploded_rear.scad
+v1.0/
+├── cad/
+│   ├── main.scad
+│   ├── config/
+│   ├── components/
+│   ├── assemblies/
+│   └── renders/
+│       ├── front.scad
+│       ├── front_angled.scad
+│       ├── rear.scad
+│       ├── rear_angled.scad
+│       ├── exploded_front.scad
+│       └── exploded_rear.scad
+└── out/
+    └── png/
 ```
 
-Open `cad/v1.0/main.scad` to view and configure the original concept.
+Open `v1.0/cad/main.scad` to view and configure the original concept.
 
 ## V1.1
 
@@ -117,7 +120,7 @@ The current V1.1 model deliberately keeps the vertical and horizontal socket mod
 The OpenSCAD model is stored in:
 
 ```text
-cad/v1.1/
+v1.1/cad/
 ```
 
 ### Renders
@@ -125,56 +128,59 @@ cad/v1.1/
 Reference renders generated from the V1.1 OpenSCAD model are stored in:
 
 ```text
-out/v1.1/png/
+v1.1/out/png/
 ```
 
 #### Front view
 
-![HUB75 display case V1.1 - front view](out/v1.1/png/hub75-display-case-front.png)
+![HUB75 display case V1.1 - front view](v1.1/out/png/hub75-display-case-front.png)
 
 #### Front angled view
 
-![HUB75 display case V1.1 - front angled view](out/v1.1/png/hub75-display-case-front-angled.png)
+![HUB75 display case V1.1 - front angled view](v1.1/out/png/hub75-display-case-front-angled.png)
 
 #### Rear view
 
-![HUB75 display case V1.1 - rear view](out/v1.1/png/hub75-display-case-rear.png)
+![HUB75 display case V1.1 - rear view](v1.1/out/png/hub75-display-case-rear.png)
 
 #### Rear angled view
 
-![HUB75 display case V1.1 - rear angled view](out/v1.1/png/hub75-display-case-rear-angled.png)
+![HUB75 display case V1.1 - rear angled view](v1.1/out/png/hub75-display-case-rear-angled.png)
 
 #### Exploded front view
 
-![HUB75 display case V1.1 - exploded front view](out/v1.1/png/hub75-display-case-exploded-front.png)
+![HUB75 display case V1.1 - exploded front view](v1.1/out/png/hub75-display-case-exploded-front.png)
 
 #### Exploded rear view
 
-![HUB75 display case V1.1 - exploded rear view](out/v1.1/png/hub75-display-case-exploded-rear.png)
+![HUB75 display case V1.1 - exploded rear view](v1.1/out/png/hub75-display-case-exploded-rear.png)
 
 ### CAD structure
 
 V1.1 continues to use the modular OpenSCAD structure introduced in V1.0.
 
 ```text
-cad/v1.1/
-├── main.scad
-├── config/
-├── components/
-│   ├── roundwood_carry_frame.scad
-│   └── ...
-├── assemblies/
-│   └── ...
-└── renders/
-    ├── front.scad
-    ├── front_angled.scad
-    ├── rear.scad
-    ├── rear_angled.scad
-    ├── exploded_front.scad
-    └── exploded_rear.scad
+v1.1/
+├── cad/
+│   ├── main.scad
+│   ├── config/
+│   ├── components/
+│   │   ├── roundwood_carry_frame.scad
+│   │   └── ...
+│   ├── assemblies/
+│   │   └── ...
+│   └── renders/
+│       ├── front.scad
+│       ├── front_angled.scad
+│       ├── rear.scad
+│       ├── rear_angled.scad
+│       ├── exploded_front.scad
+│       └── exploded_rear.scad
+└── out/
+    └── png/
 ```
 
-Open `cad/v1.1/main.scad` to view and configure the complete V1.1 concept.
+Open `v1.1/cad/main.scad` to view and configure the complete V1.1 concept.
 
 The Customizer keeps the applicable V1.0 visibility options and adds controls for the roundwood frame, brackets, cross member and center supports. A dedicated `roundwood_structure` view is also available for inspecting the new carry structure separately.
 
@@ -183,15 +189,15 @@ The Customizer keeps the applicable V1.0 visibility options and adds controls fo
 The documentation PNG views are generated from the fixed OpenSCAD entry points in the `renders/` directories:
 
 ```text
-cad/v1.0/renders/
-cad/v1.1/renders/
+v1.0/cad/renders/
+v1.1/cad/renders/
 ```
 
 The render automation processes these files and writes the generated images to:
 
 ```text
-out/v1.0/png/
-out/v1.1/png/
+v1.0/out/png/
+v1.1/out/png/
 ```
 
 Each documentation view stores its own fixed camera position so the images can be regenerated consistently after model changes.
@@ -201,14 +207,14 @@ Each documentation view stores its own fixed camera position so the images can b
 ```text
 .
 ├── README.md
-├── cad/
-│   ├── v1.0/
+├── v1.0/
+│   ├── cad/
 │   │   └── ...
-│   └── v1.1/
-│       └── ...
-└── out/
-    ├── v1.0/
-    │   └── png/
-    └── v1.1/
+│   └── out/
+│       └── png/
+└── v1.1/
+    ├── cad/
+    │   └── ...
+    └── out/
         └── png/
 ```
